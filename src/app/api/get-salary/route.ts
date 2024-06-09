@@ -6,7 +6,7 @@ import { getDoc, doc } from 'firebase/firestore'
 
 
 
- async function GET(req: NextRequest, res: NextResponse) {
+ export async function GET(req: NextRequest, res: NextResponse) {
   const method = req.method;
 
   if (method === "GET") {
@@ -28,4 +28,4 @@ import { getDoc, doc } from 'firebase/firestore'
   } 
 }
 
-export {GET}
+export const revalidate = 0;

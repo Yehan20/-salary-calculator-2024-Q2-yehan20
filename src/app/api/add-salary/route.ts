@@ -5,7 +5,7 @@ import {database } from '../../database/firebase'
 import { doc , updateDoc} from 'firebase/firestore'
 
 // handling post request 
-async function POST(req : any, res : NextApiResponse) {
+export async function POST(req : any, res : NextApiResponse) {
 
     const method = req.method;
 
@@ -37,6 +37,4 @@ async function POST(req : any, res : NextApiResponse) {
     }
 }
 
-export {
-    POST
-}
+export const revalidate = 0;

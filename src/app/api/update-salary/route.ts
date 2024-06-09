@@ -4,7 +4,7 @@ import {NextResponse} from 'next/server';
 import {database } from '../../database/firebase'
 import { doc , updateDoc} from 'firebase/firestore'
 
-async function PUT(req : any, res : NextApiResponse) {
+export async function PUT(req : any, res : NextApiResponse) {
 
     const method = req.method;
 
@@ -34,6 +34,4 @@ async function PUT(req : any, res : NextApiResponse) {
     }
 }
 
-export {
-    PUT
-}
+export const revalidate = 0;
