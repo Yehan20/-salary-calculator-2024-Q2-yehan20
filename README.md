@@ -106,12 +106,11 @@ bun dev
 ```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+![Image description](/public/ui/mb.png)
+
+![Image description](/public/ui/lg.JPG)
+
 ```bash
-
-[![Image description](/public/ui/mb.png)]
-
-[![Image description](/public/ui/lg.JPG)]
-
 
 ## Deployment
 
