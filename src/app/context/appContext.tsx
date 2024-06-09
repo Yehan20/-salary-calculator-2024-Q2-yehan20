@@ -64,7 +64,6 @@ export const SalaryContextProvider = ({ children }: any) => {
     setShowModel(!showModel);
   }
   
-
   // Adding New Earning or Deduction
   const addNewSalaryFactor = async (methodType: string, salaryFactor: string, item: SalaryFactorObj) => {
 
@@ -124,7 +123,6 @@ export const SalaryContextProvider = ({ children }: any) => {
   // Generating our final calcaltion based on our  input 
   const calculateValues = (basicSalary: number, earnings: SalaryFactorObj[], deductions: SalaryFactorObj[]) => {
     
-  
     // Make Object to store the information of the salary stats
     const values: SalaryTypes = {
       totalEarnings: basicSalary + earnings.reduce((acc, current) => acc + current.amount, 0),
@@ -172,7 +170,7 @@ export const SalaryContextProvider = ({ children }: any) => {
       setSalarySummary(values)
     
       // make connection with fire base
-      const docRef = doc(database, "salaries", "4OkZHjF5WAUsXy3tsJ35"); // Replace placeholders with your actual value
+      const docRef = doc(database, "salaries", process.env.NEXT_PUBLIC_FIREBASE_COLLECTION as string); // Replace placeholders with your actual value
 
       MOUNTED && updateDoc(docRef, { salary: basicSalary })
         .then(() => {
@@ -339,7 +337,7 @@ export const SalaryContextProvider = ({ children }: any) => {
       totalEPF:0,
       totalEarnings:0,
     })
-    const docRef = doc(database, "salaries", "4OkZHjF5WAUsXy3tsJ35"); // Replace placeholders with your actual value
+    const docRef = doc(database, "salaries", process.env.NEXT_PUBLIC_FIREBASE_COLLECTION as string); // Replace placeholders with your actual value
 
       updateDoc(docRef, { salary:0, deductions:[],earnings:[]})
       .then(() => {

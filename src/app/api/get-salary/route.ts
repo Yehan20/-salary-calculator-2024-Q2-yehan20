@@ -11,7 +11,7 @@ import { getDoc, doc } from 'firebase/firestore'
 
   if (method === "GET") {
     try {
-      const docRef = doc(database, 'salaries','4OkZHjF5WAUsXy3tsJ35')
+      const docRef = doc(database, 'salaries', process.env.NEXT_PUBLIC_FIREBASE_COLLECTION as string)
     
        const docData:any = await getDoc(docRef);
        let userSalary= docData.data()

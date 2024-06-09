@@ -13,7 +13,7 @@ async function POST(req : any, res : NextApiResponse) {
         try {
             const body  =await req.json()
        
-            const docRef = doc(database,'salaries', '4OkZHjF5WAUsXy3tsJ35');
+            const docRef = doc(database,'salaries',  process.env.NEXT_PUBLIC_FIREBASE_COLLECTION as string);
     
              
               await updateDoc(docRef, {
