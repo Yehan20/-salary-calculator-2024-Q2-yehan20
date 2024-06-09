@@ -1,13 +1,12 @@
 
-import { NextApiRequest, NextApiResponse } from "next";
-import { NextResponse } from 'next/server';
+import { NextResponse,NextRequest } from 'next/server';
 
 import {database } from '../../database/firebase'
 import { getDoc, doc } from 'firebase/firestore'
 
 
 
- async function GET(req: NextApiRequest, res: NextApiResponse) {
+ async function GET(req: NextRequest, res: NextResponse) {
   const method = req.method;
 
   if (method === "GET") {
