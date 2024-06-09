@@ -77,7 +77,7 @@ const SalarySummary = () => {
                     <Amount>-{formatNumber(salarySummary?.apit as number)}</Amount>
                 </div>
 
-                <div className="flex my-6 py-3 px-3 rounded-sm border-gray-500 justify-between border-solid border">
+                <div className="flex my-6 py-3 px-3 rounded-sm border-gray-300 justify-between border-solid border">
                     <h3 className='font-bold'>Net Salary (Take Home)</h3>
                     <h3 className='font-bold'>{formatNumber(salarySummary?.netSalary as number)}</h3>
                 </div>

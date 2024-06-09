@@ -33,8 +33,8 @@ const SalaryFactoritem = ({id,name,amount,checked,type}:SalaryFactorObj) => {
            <h4>{amount} <span> </span></h4>
            <h5 className='text-xs  flex items-center gap-3' > {checked ?<FaCheck color='blue'/>:""} EPF/ETF <span className='text-gray-500'>|</span>  </h5>
            <div className="flex ml-3 gap-3">
-               <Icon onClick={()=>displayModel("Update",type??'',{name,amount,checked,id:id})}><MdModeEditOutline /></Icon>
-               <Icon onClick={()=>deleteSalaryFactor(id??0,type??'')}><IoClose /></Icon>
+               <Icon title='Click to Edit' onClick={()=>displayModel("Update",type??'',{name,amount,checked,id:id})}><MdModeEditOutline /></Icon>
+               <Icon title='Click to Delete' onClick={()=>deleteSalaryFactor(id??0,type??'')}><IoClose /></Icon>
            </div>
 
      </SalaryFactoritemStyled>
