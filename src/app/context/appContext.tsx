@@ -101,6 +101,7 @@ export const SalaryContextProvider = ({ children }: any) => {
 
     try {
       const response = await fetch('/api/add-salary', {
+         cache: 'no-store' ,
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(newSalaries), 
@@ -242,6 +243,7 @@ export const SalaryContextProvider = ({ children }: any) => {
     // connect with firebase with our next api 
     try {
       const response = await fetch('/api/update-salary', {
+        cache: 'no-store',
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' }, // Set content type
         body: JSON.stringify(finalArry), // Stringify data for JSON body
@@ -295,7 +297,7 @@ export const SalaryContextProvider = ({ children }: any) => {
 
     try {
       const response = await fetch(`/api/delete-factor/`, {
-
+        cache: 'no-store' ,
         method: 'POST',
         headers: { 'Content-Type': 'application/json' }, // Set content type
         body: JSON.stringify(finalArry), // Stringify data for JSON body
@@ -354,7 +356,7 @@ export const SalaryContextProvider = ({ children }: any) => {
   // initial get the available salaries 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('/api/get-salary/'); // Replace with your API endpoint
+      const response = await fetch('/api/get-salary/',{ cache: 'no-store' }); // Replace with your API endpoint
       const data = await response.json()
 
       setSalaryInfo([data]);
