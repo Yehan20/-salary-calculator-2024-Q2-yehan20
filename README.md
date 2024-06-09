@@ -64,7 +64,7 @@ Setting up locally
 $ git clone https://github.com/Yehan20/-salary-calculator-2024-Q2-yehan20.git
 
 # Go into the repository
-$ cd salary-calculator-2024-Q2-yehan20
+$ cd -salary-calculator-2024-Q2-yehan20
 
 # Remove current origin repository
 $ git remote remove origin
@@ -89,7 +89,7 @@ Next
 ```bash
 # Terminal for the server
 # cd into the server folder
-$ cd salary-calculator-2024-Q2-yehan20
+$ cd -salary-calculator-2024-Q2-yehan20
 
 # Install dependencies
 $ npm install
