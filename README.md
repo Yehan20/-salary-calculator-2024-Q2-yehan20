@@ -1,9 +1,12 @@
 
 # Sallary Calculator
 
+
 The “Salary Calculator: Your Ultimate Wage Companion!” is designed to streamline  your paycheck calculations. This app takes the guesswork out of determining your  salary. 
 Simply input your basic salary and other income, then the application will do the rest,  factoring in EPF (Employees' Provident Fund), ETF (Employees' Trust Fund), and APIT 
 (Annual Personal Income Tax). With instant results, you'll have a clear picture of your  take-home pay in seconds
+
+
 
 Link to the application: https://salary-calculator-2024-q2-yehan20.vercel.app/
 
@@ -54,7 +57,7 @@ We have used firebase as storage medium to store data inorder to setup a firesto
  Go to the [Firebase Console](https://console.firebase.google.com/) and create a new project. Follow the on-screen instructions to set up your project.
  **Add Firebase to Your Web App**: After creating the project, click on the "Web" icon to add Firebase to your web app. Follow the instructions to register your app and obtain your Firebase configuration settings. **Enable Firestore**: In the Firebase console, navigate to the "Firestore Database" section and click on "Create Database". Choose the location for your database and set the security rules to suit your needs.  **Install Firebase SDK**: In your project directory, install the Firebase JavaScript SDK using npm or yarn and replace it with the Firebase config object:
 
-Setting up loccally
+Setting up locally
 
 ```bash
 # Clone this repository
@@ -104,6 +107,10 @@ bun dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ```bash
+
+[![Image description](/public/ui/mb.png)]
+
+[![Image description](/public/ui/lg.JPG)]
 
 
 ## Deployment

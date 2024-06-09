@@ -11,7 +11,7 @@ const Container = styled.div`
    outline:1px solid #ccc;
    padding:20px;
    border-radius:10px;
-   ${Andriod({width:"100%"})};
+   ${Andriod({width:"100%",padding:"20px 15px"})};
 
 `;
 const Title = styled.h2`

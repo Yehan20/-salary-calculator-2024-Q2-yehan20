@@ -14,11 +14,11 @@ const Container = styled.div`
    outline:1px solid #ccc;
    padding:20px;
    border-radius:10px;
-   ${Andriod({width:"100%"})};
+   ${Andriod({width:"100%",padding:"20px 15px"})};
 `;
 const Title = styled.h1`
   font-weight:600;
-  font-size:1.25rem;
+  font-size:1.1rem;
 `
 
 const Subtitle = styled.h3`

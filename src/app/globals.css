@@ -31,11 +31,14 @@ input::-webkit-inner-spin-button {
 input[type=number]{
     -moz-appearance: textfield;
 }
+.Deductions {
+   display:  none !important;
+}
 
 
 @media screen and (max-width:767.1px) {
         h4 {  
-          font-size: 0.9rem;
+          font-size: 0.8rem;
         }
 
         h1,h2 {
