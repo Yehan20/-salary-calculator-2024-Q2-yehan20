@@ -1,5 +1,5 @@
 
-# Sallary Calculator
+# Salary Calculator
 
 
 The “Salary Calculator: Your Ultimate Wage Companion!” is designed to streamline  your paycheck calculations. This app takes the guesswork out of determining your  salary. 
